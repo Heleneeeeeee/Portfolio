@@ -1,3 +1,52 @@
+:root{ 
+  --darkBlueColor: #0B0D13;
+  --whiteColor: #ffffff;
+  --blueColor: #0078FF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--darkBlueColor);
+  
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+li {
+  list-style: none;
+  margin-right: 80px;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--whiteColor);
+  text-decoration: none;
+  position: relative; 
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--whiteColor); 
+  transition: all 500ms ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 
 
 
